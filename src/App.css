@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.games {
+  width: 100%;
+  height: 100%;
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+
+@font-face {
+  font-family: Eloquia;
+  src: url('./fonts/Eloquia/Typekiln\ -\ EloquiaDisplay-ExtraBold.otf');
+}
+
+.name {
   color: white;
+  margin: auto;
+  font-size: 280px;
+  letter-spacing: 5px;
+  /* line-height: 400px; */
+  /* font-family: 'Eloquia' */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  width: 100%;
+  height: 100px;
+  margin-top: 2%;
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  filter: brightness(0) invert(1);
+}
+
+.riot-logo {
+  width: 250px;
+  height: 250px;
+  /* margin: auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.game-card {
+  width: 300px;
+  height: 200px;
+}
+
+.game-card:hover {
+  cursor: pointer;
+}
+
+.valo {
+  background-image: url('../public/valo.jpg');
+  background-size: cover;
+}
+
+.lol {
+  background-image: url('../public/lol.jpg');
+  background-size: cover;
+}
+
+.tft {
+  background-image: url('../public/tft.jpg');
+  background-size: cover;
+}
+
+.lor {
+  background-image: url('../public/lor.jpg');
+  background-size: cover;
+}
+
+body {
+  position: relative;
+}
+
+.transition {
+  /* z-index: 2; */
+  position: absolute;
+  width: 100;
+  height: 100;
+  background-color: black;
+  top: 0px;
+  border-radius: 0% 0% 100% 0%;
 }
