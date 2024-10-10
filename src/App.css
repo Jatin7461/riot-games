@@ -21,10 +21,16 @@
   color: white;
   margin: auto;
   font-size: 280px;
+
   letter-spacing: 5px;
   /* line-height: 400px; */
   /* font-family: 'Eloquia' */
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.letter{
+  display: inline-block;
+  min-width: 85px;
 }
 
 .header {
@@ -98,13 +104,13 @@ body {
   line-height: 160px;
 }
 
-.char-card{
+.char-card {
   height: 350px;
   position: relative;
   border-radius: 20px;
 }
 
-.char-image{
+.char-image {
   position: absolute;
   width: 200px;
   top: -20%;
