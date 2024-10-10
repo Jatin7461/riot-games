@@ -148,7 +148,7 @@ const HomePage = () => {
     }, { scope: container })
     return <div ref={container} className='flex flex-col h-full'>
         <Header />
-        <Games />
+        <Games heading="RIOT GAMES"/>
         <div className='flex gap-2 m-4'>
 
             <GameCard a='lol' cb={scaleFunction} />

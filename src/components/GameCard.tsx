@@ -20,24 +20,28 @@ const GameCard = ({ a, cb }: gc) => {
 
     })
 
-    return <div className={`game-card rounded-md flex-1 ${a}`} onClick={() => {
+    return <div className={`game-card rounded-md flex-1 ${a}`}
+
+    // onClick={() => {
 
 
-        gsap.timeline().to('.transition', {
-            width: 2000,
-            height: 1440,
-            duration: 1.05,
-        }).to('.transition', {
-            width: 0,
-            height: 0,
-            duration: 0,
-        })
+    //     gsap.timeline().to('.transition', {
+    //         width: 2000,
+    //         height: 1440,
+    //         duration: 1.05,
+    //     }).to('.transition', {
+    //         width: 0,
+    //         height: 0,
+    //         duration: 0,
+    //     })
 
-        setTimeout(() => {
+    //     localStorage.setItem('game', a)
 
-            navigate('/game')
-        }, 1000)
-    }} >
+    //     setTimeout(() => {
+    //         navigate('/game')
+    //     }, 1000)
+    // }}
+    >
 
     </div>
 }

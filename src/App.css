@@ -12,6 +12,11 @@
   src: url('./fonts/Eloquia/Typekiln\ -\ EloquiaDisplay-ExtraBold.otf');
 }
 
+@font-face {
+  font-family: Beaufort;
+  src: url('./fonts/Beaufort/Beaufort-Bold.ttf');
+}
+
 .name {
   color: white;
   margin: auto;
@@ -19,7 +24,7 @@
   letter-spacing: 5px;
   /* line-height: 400px; */
   /* font-family: 'Eloquia' */
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .header {
@@ -83,4 +88,25 @@ body {
   background-color: black;
   top: 0px;
   border-radius: 0% 0% 100% 0%;
+}
+
+
+.game-name {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: 'Beaufort'; */
+  font-size: 150px;
+  line-height: 160px;
+}
+
+.char-card{
+  height: 350px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.char-image{
+  position: absolute;
+  width: 200px;
+  top: -20%;
+  right: 25%;
 }
